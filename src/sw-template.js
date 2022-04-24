@@ -23,7 +23,7 @@ const cacheFirst = [
 ]
 
 registerRoute(
-    ({request, url}) => cacheFirst.includes(url.pathname), 
+    ({request, url}) => cacheFirst.includes(url.href), 
     new CacheFirst()
 )
 
